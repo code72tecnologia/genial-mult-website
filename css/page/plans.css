@@ -1,0 +1,160 @@
+.plans {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    display: grid;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+.plans__heading {
+    display: grid;
+    justify-items: center;
+}
+
+.plans__title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.plans__description {
+    max-width: 50ch;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.plans__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.plans__details-item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.plans__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.plan {
+    border: 2px solid var(--white-85);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.08);
+    border-color: var(--darkBlue-80);
+    cursor: pointer;
+}
+
+.plan__qualities {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.plan__qualities-item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white-85);
+    border-radius: 50%;
+}
+
+.plan__heading {
+    display: grid;
+    gap: 4px;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--white-85);
+}
+
+.plan__heading-mega {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.plan__heading-mega span {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.plan__heading-name {
+    text-transform: uppercase;
+}
+
+.plan__benefits {
+    display: grid;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--white-85);
+}
+
+.plan__benefits-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.plan__price {
+    padding: 1.25rem 0;
+}
+
+.plan__price-payment {
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px; 
+}
+
+@media(max-width: 1200px) {
+    .plan__price > p {
+        font-size: 1.565rem;
+    }
+}
+
+@media(max-width: 1150px) {
+    .plans__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .plans {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        gap: 2rem;
+    }
+
+    .plans__details {
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .plans__list {
+        grid-template-columns: 1fr;
+    }
+
+    .plan {
+        padding: 1rem;
+        border-radius: 1.25rem;
+    }
+
+    .plan__heading-mega {
+        font-size: 2.875rem;
+    }
+}

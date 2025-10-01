@@ -1,0 +1,54 @@
+/* ----- General styles ----- */
+.tag {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    text-transform: uppercase;
+    font: 500 1rem/1.45 "Rubik", sans-serif;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* ----- Primary and Secondary styles ----- */
+.tag--primary {
+    color: var(--primary-50);
+    border: 1px solid var(--primary-50);
+}
+
+.tag--primary::before {
+    background-color: var(--primary-50);
+    box-shadow: 0 0 8px 2px rgba(155, 240, 252, 0.15);
+}
+
+.tag--secondary {
+    color: var(--darkBlue-80);
+    border: 1px solid var(--darkBlue-80);
+}
+
+.tag--secondary::before {
+    background-color: var(--darkBlue-90);
+    box-shadow: 0 0 8px 2px rgba(3, 73, 199, 0.15);
+}
+
+/* ----- Responsive styles ----- */
+@media(max-width: 576px) {
+    .tag {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .tag::before {
+        width: 8px;
+        height: 8px;
+    }
+}

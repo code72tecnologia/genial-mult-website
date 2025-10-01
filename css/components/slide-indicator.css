@@ -1,0 +1,26 @@
+.security__scroll-tip {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1.25rem;
+  gap: 0.5rem;
+  font: 500 1rem/1.45 "Roboto", Arial, sans-serif;
+}
+
+.security__scroll-tip img {
+    animation: moveRight 1.5s infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(8px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}

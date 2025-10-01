@@ -1,0 +1,61 @@
+.cta {
+    background-image: url("/images/backgrounds/cta-xl.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    padding: 0 3.75rem;
+    height: 480px;
+    display: grid;
+    align-content: center;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.1);
+}
+
+.cta__title {
+    max-width: 20ch;
+}
+
+.cta__description {
+    max-width: 40ch;
+}
+
+@media(max-width: 1200px) {
+    .cta {
+        background-image: url("/images/backgrounds/cta-l.webp");
+    }
+}
+
+@media(max-width: 992px) {
+    .cta {
+        padding: 0 2.5rem;
+    }
+}
+
+@media(max-width: 860px) {
+    .cta {
+        background-image: url("/images/backgrounds/cta-m.webp");
+    }
+}
+
+/* @media(max-width: 650px) {
+    
+} */
+
+@media(max-width: 576px) {
+    .cta {
+        background-image: url("/images/backgrounds/cta-s.webp");
+        background-position: top center;
+    }
+
+    .cta-container {
+        padding: 0; 
+    }
+
+    .cta {
+        padding: 2.5rem 1.25rem;
+        height: 420px;
+        border-radius: 0;
+        align-content: end;
+    }
+}

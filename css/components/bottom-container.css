@@ -1,0 +1,21 @@
+.bottom-container {
+    background-image: linear-gradient(var(--white-99) 25%, var(--darkBlue-40) 0%);
+}
+
+@media(max-width: 1200px) {
+    .bottom-container {
+        background-image: linear-gradient(var(--white-99) 20%, var(--darkBlue-40) 0%);
+    }
+}
+
+@media(max-width: 900px) {
+    .bottom-container {
+        background-image: linear-gradient(var(--white-99) 18%, var(--darkBlue-40) 0%);
+    }
+}
+
+@media(max-width: 768px) {
+    .bottom-container {
+        background-image: linear-gradient(var(--white-99) 15%, var(--darkBlue-40) 0%);
+    }
+}

@@ -1,0 +1,27 @@
+/* ----- Global styles and resets ----- */
+@import "/css/utilities/global.css";
+
+/* ----- Utilities ----- */
+@import "/css/utilities/colors.css";
+@import "/css/utilities/typography.css";
+@import "/css/utilities/container.css";
+
+/* ----- Page components ----- */
+@import "/css/components/buttons.css";
+@import "/css/components/tag.css";
+@import "/css/components/bottom-container.css";
+@import "/css/components/slide-indicator.css";
+@import "/css/components/whatsapp-btn.css";
+
+/* ----- Page styles ----- */
+@import "/css/page/header.css";
+@import "/css/page/banner.css";
+@import "/css/page/plans.css";
+@import "/css/page/security.css";
+@import "/css/page/projects.css";
+@import "/css/page/features.css";
+@import "/css/page/stores.css";
+@import "/css/page/cta.css";
+@import "/css/page/footer.css";
+@import "/css/page/testimonials.css";
+@import "/css/page/faq.css";

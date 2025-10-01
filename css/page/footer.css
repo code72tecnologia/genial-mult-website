@@ -1,0 +1,159 @@
+.footer {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(4, auto);
+}
+
+.footer-section-title {
+    font: 500 1.25rem/1.45 "Rubik", Arial, sans-serif;
+    color: var(--white-99);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.footer a {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--white-99);
+}
+
+/* ----- Footer Company ----- */
+.footer__company-info {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer__company-info p {
+    max-width: 32ch;
+}
+
+.footer__company-media h3 {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footer__company-media-links {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__company-media-links a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #092F73;
+}
+
+/* ----- Footer Contact ----- */
+.footer__contact-list {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.footer__contact-item-title {
+    font: 500 1.125rem/1.50 "Rubik", Arial, sans-serif;
+    color: var(--white-95);
+    margin-bottom: 4px;
+}
+
+.footer__contact-content {
+    font: 400 1rem/1.45 "Roboto", Arial, sans-serif;
+    color: var(--white-85);
+}
+
+/* ----- Footer Navigation ----- */
+.footer__navigation-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* ----- Footer Stores ----- */
+.footer__stores {
+    display: grid;
+}
+
+.footer__stores-item {
+    margin-bottom: 1.25rem;
+}
+
+.footer__stores-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__stores-title {
+    margin-bottom: 6px;
+}
+
+.footer__stores-address {
+    line-height: 1.6;
+}
+
+/* ----- Copyright ----- */
+.copy-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+}
+
+.copyright {
+    font: 500 1rem/1.45 "Roboto", Arial, sans-serif;
+    color: var(--white-85);
+}
+
+@media(max-width: 1180px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .footer__company {
+        grid-column: 1 / -1;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer__company-media-links {
+        justify-content: end;
+    }
+}
+
+@media(max-width: 860px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.6rem;
+    }
+
+    .footer__company-info {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer__company {
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+
+    .footer__company-media-links {
+        justify-content: start;
+    }
+}

@@ -1,0 +1,146 @@
+.faq-bg {
+    background-image: url("/images/backgrounds/security-bg-l.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.faq {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  display: grid;
+  justify-items: center;
+  gap: 2.5rem;
+}
+
+.faq__heading {
+  display: grid;
+  justify-items: center;
+}
+
+.faq__title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.faq__description {
+  max-width: 44ch;
+  text-align: center;
+}
+
+.faq__list {
+  max-width: 1080px;
+  width: 100%;
+}
+
+.faq__item {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.faq__item:nth-child(odd) {
+  background-color: var(--white-99);
+}
+
+.faq__item-question button{
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  text-align: left;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.faq__item-question button::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-image: linear-gradient(180deg, #1B61E0, #0349C7);
+  transition: width 0.3s ease-in-out;
+}
+
+.faq__item-question button::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/icons/faq.svg");
+  transition: all 0.3s ease-in-out;
+}
+
+.faq__item-answer {
+  max-width: 45ch;
+  padding-left: 1.5rem;
+  display: none;
+  animation: show 1s forwards;
+}
+
+.faq__item.active .faq__item-answer {
+  display: block;
+}
+
+.faq__item:hover .faq__item-question button::after,
+.faq__item.active .faq__item-question button::after {
+  transform: rotate(180deg);
+}
+
+.faq__item:hover .faq__item-question button::before {
+  width: 18px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 100px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .faq-bg {
+    background-image: url("/images/backgrounds/security-bg-m.webp");
+  }
+}
+
+@media(max-width: 768px) {
+  .faq {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    gap: 2rem;
+  }
+}
+
+@media(max-width: 576px) {
+  .faq {
+    gap: 1.5rem; 
+  }
+
+  .faq__item {
+    padding: 1rem;
+  }
+
+  .faq__item-question button {
+    font-size: 1rem;
+  }
+
+  .faq__item-answer {
+    font-size: 0.875rem;
+  }
+}
+
+@media(max-width: 420px) {
+  .faq-bg {
+    background-image: url("/images/backgrounds/security-bg-s.webp");
+  }
+}

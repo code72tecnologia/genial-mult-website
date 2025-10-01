@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.heading-1 {
+    font: 700 3.875rem/1.10 "Rubik", Arial, sans-serif;
+}
+
+.heading-2 {
+    font: 700 3rem/1.12 "Rubik", Arial, sans-serif;
+}
+
+.heading-3 {
+    font: 700 2.440rem/1.12 "Rubik", Arial, sans-serif;
+}
+
+.heading-4 {
+    font: 500 2rem/1.12 "Rubik", Arial, sans-serif;
+}
+
+.heading-5 {
+    font: 500 1.565rem/1.15 "Rubik", Arial, sans-serif;
+}
+
+.heading-6 {
+    font: 500 1.25rem/1.16 "Rubik", Arial, sans-serif;
+}
+
+.paragraph-big {
+    font: 400 1.125rem/1.45 "Roboto", Arial, sans-serif;
+}
+
+.paragraph,
+.paragraph-rubik {
+    font: 400 1rem/1.45 "Roboto", Arial, sans-serif;
+}
+
+.paragraph-rubik {
+    font-family: "Rubik", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.paragraph-small {
+    font: 400 0.875rem/1.50 "Roboto", Arial, sans-serif;
+}
+
+.label {
+    font: 400 1.5rem/1.45 "Roboto", Arial, sans-serif;    
+}
+
+.subtitle-1 {
+    font: 500 1.25rem/1.45 "Rubik", Arial, sans-serif;
+}
+
+.subtitle-2 {
+    font: 500 1.125rem/1.50 "Rubik", Arial, sans-serif;
+}
+
+/* ----- Responsive styles ----- */
+@media(max-width: 1250px) {
+    .heading-1 {
+        font-size: 3.5rem;
+    }
+
+    .heading-4 {
+        font-size: 1.500rem;
+    }
+
+    .label {
+        font-size: 1.375rem;
+    }
+}
+
+@media(max-width: 1000px) { 
+    .heading-1 {
+        font-size: 2.875rem;
+    }
+
+    .heading-2 {
+        font-size: 38px;
+    }
+
+    .label {
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .heading-5 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 576px) {
+    .heading-1 {
+        font-size: 2rem;
+    }
+
+    .heading-2 {
+        font-size: 28px;
+    }
+
+    .heading-4 {
+        font-size: 1.375rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+}

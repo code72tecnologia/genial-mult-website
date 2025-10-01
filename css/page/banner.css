@@ -1,0 +1,94 @@
+.banner-bg {
+    height: 100vh;
+    background-image: url("/images/backgrounds/banner-xl.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.banner {
+    height: 100%;
+    display: grid;
+    place-content: center start;
+    gap: 1.5rem;
+}
+
+.banner__title {
+    max-width: 17ch;
+}
+
+.banner__description {
+    max-width: 38ch;
+}
+
+@media(max-width: 1250px) {
+    .banner-bg {
+        height: 90vh;
+    }
+}
+
+@media(max-width: 1200px) {
+    .banner-bg {
+        height: 80vh;
+    }
+}
+
+@media(max-width: 1080px) {
+    .banner-bg {
+        height: 75vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .banner-bg {
+        height: auto;
+        background-image: url("/images/backgrounds/banner-l.webp");
+        background-position: bottom center;
+    }
+
+    .banner {
+        height: auto;
+        padding-top: 5rem;
+        padding-bottom: 38.75rem;
+    }
+}
+
+@media(max-width: 880px) {
+    .banner {
+        padding-bottom: 31.25rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .banner {
+        padding-top: 3.75rem;
+        padding-bottom: 28.125rem;
+    }
+}
+
+@media(max-width: 680px) {
+    .banner-bg {
+        background-image: url("/images/backgrounds/banner-m.webp");
+    }
+}
+
+@media(max-width: 576px) {
+    .banner-bg {
+        background-image: url("/images/backgrounds/banner-s.webp");
+    }
+
+    .banner {
+        padding-top: 3.75rem;
+        padding-bottom: 16.25rem;
+        gap: 1.25rem;
+    }
+}
+
+@media(max-width: 320px) {
+    .banner-bg {
+        background-image: radial-gradient(#072B6E, #012360);
+    }
+    .banner {
+        padding-bottom: 3.75rem;
+    }
+}

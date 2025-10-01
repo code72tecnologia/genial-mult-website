@@ -1,0 +1,234 @@
+.security-bg {
+    background-image: url("/images/backgrounds/security-bg-l.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.security {
+    padding: 6.25rem 0;
+    overflow: hidden;
+    display: grid;
+    gap: 2.5rem; 
+}
+
+.security__title {    
+    margin-bottom: 1rem;
+}
+
+.security__description {
+    max-width: 50ch;
+}
+
+.security__heading {
+    max-width: 1440px;
+    padding: 0 4.5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.security__heading-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: end;
+}
+
+.slide-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.slide-btn {
+    border: none;
+    cursor: pointer;
+    background-color: var(--darkBlue-80);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.slide-btn:hover {
+    background-color: var(--darkBlue-90);
+}
+
+.security__services {
+    display: flex;
+    align-items: start;
+    padding: 0 4.5rem;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.security__services::-webkit-scrollbar {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.service {
+    min-width: 411px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: var(--white-99);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+}
+
+.service__img {
+    width: 100%;
+}
+
+.service__content {
+    padding: 1rem 1.25rem 1.5rem 1.25rem;
+}
+
+.service__content-list {
+    display: grid;
+    gap: 0.75rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--white-85);
+    margin-bottom: 1.25rem;
+}
+
+.service__content-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service__content-link {
+    color: var(--darkBlue-80);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: uppercase;
+    max-width: max-content;
+    outline: none;
+}
+
+.service__content-link:focus {
+    border: 2px solid var(--darkBlue-80);
+    border-radius: 0.5rem;
+}
+
+.service__content-link img {
+    transition: 0.3s;
+}
+
+.service__content-link:hover img {
+    transform: translateX(6px);
+}
+
+#slide-indicator {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+    .security__heading,
+    .security__services {
+        padding: 0 4rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .security-bg {
+        background-image: url("/images/backgrounds/security-bg-m.webp");
+    }  
+    
+    .security__heading,
+    .security__services {
+        padding: 0 3rem;
+    }
+
+    .security__services {
+        gap: 1.5rem;
+    }
+
+    .service {
+        min-width: 357px;
+    } 
+}
+
+@media(max-width: 768px) {
+    .security {
+        padding: 3.75rem 0;
+        gap: 2rem;
+    }
+
+    .slide-controls {
+        gap: 0.75rem;
+    }
+
+    .slide-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 576px) {
+    .security__heading,
+    .security__services {
+        padding: 0 1.25rem;
+    }
+
+    .security {
+        gap: 1.5rem;
+    }
+
+    .slide-controls {
+        display: none;
+    }
+
+    .security__services {
+        gap: 1rem;
+    }
+
+    .service {
+        min-width: 375px;
+    }
+
+    .service__content {
+        padding: 0.75rem 1rem 1.25rem 1rem;
+    }
+
+    .service__content-list {
+        margin-bottom: 1rem;
+    }
+
+    .service__content-list-item,
+    .service__content-link {
+        font-size: 0.875rem;
+    }
+
+    #slide-indicator {
+        display: flex;
+    }
+}
+
+@media(max-width: 420px) {
+    .service {
+        min-width: 100%;
+    }
+
+    .security-bg {
+        background-image: url("/images/backgrounds/security-bg-s.webp");
+    }
+}
