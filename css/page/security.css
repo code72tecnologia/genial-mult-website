@@ -6,7 +6,7 @@
 }
 
 .security {
-    padding: 6.25rem 0;
+    padding: 5rem 0;
     overflow: hidden;
     display: grid;
     gap: 2.5rem; 
@@ -51,7 +51,7 @@
     align-items: center;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .slide-btn:hover {

@@ -1,6 +1,6 @@
 .testimonials {
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: grid;
   justify-items: center;
   gap: 2.5rem;
@@ -29,7 +29,6 @@
 }
 
 .testimonials__item {
-  /* max-width: 410px; */
   height: max-content;
   border: 1px solid var(--white-85);
   background-color: var(--white-95);

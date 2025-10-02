@@ -23,3 +23,9 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* section,
+div,
+article {
+    scroll-margin-top: 100px;
+} */
